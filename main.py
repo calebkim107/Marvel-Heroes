@@ -25,9 +25,10 @@ if answer.upper() == "Y":
   question2 = input("What sport do you prefer?(Choose A or B) \nA Soccer \nB) Basketball")
   question3 = input("What dessert do you prefer?(Choose A or B) \nA Cake \nB) Ice cream")
   choice = question1 + question2 + question3
-wait = input("Are you ready yo know what marvel character you are most like?")
-if wait.upper() == "Y":
-  print("Your Marvel Hero is " + Heroes [choice.upper()] )
+  wait = input("Are you ready yo know what marvel character you are most like?")
+  if wait.upper() == "Y or N":
+    print("Your Marvel Hero is " + Heroes [choice.upper()] )
+  else:
+    print("Okay suit yourself")
 else:
-  print("Okay")
-
+  print("Oh that's too bad. Come back again later.")
